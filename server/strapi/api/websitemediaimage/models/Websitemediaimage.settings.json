@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "websitemediaimages",
+  "info": {
+    "name": "websitemediaimage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "unique": true,
+      "type": "string"
+    },
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "href": {
+      "default": "",
+      "type": "string"
+    },
+    "pages": {
+      "collection": "page",
+      "via": "websitemediaimage"
+    }
+  }
+}
