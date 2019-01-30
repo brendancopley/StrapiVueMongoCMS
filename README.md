@@ -1,1 +1,1 @@
-# StrapiVuePostgresSQLCMS
+# StrapiVueMongoCMS
